@@ -1,0 +1,102 @@
+body{
+    height: 100%;
+    margin: 0 auto;
+}
+@font-face {
+    font-family: mojFont;
+    src: url(deftone_stylus.ttf);
+}
+.img-wrapper{
+    position: absolute;
+    margin-right: 33px;
+}
+#text{
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    left: 43.67%;
+    top: 46%;
+    z-index: 10;
+    animation: smanji 1.5s infinite linear alternate;
+    transform-origin: center;
+    color: rgba(192,192,192,1);
+    font-family: 'Lobster', cursive;
+    
+}
+#Layer_1{
+    position: relative;
+}
+#heart{
+    animation: scale 1.5s infinite linear alternate;
+    transform-origin: center;
+}
+.lead{
+    font-family: mojFont;
+    font-size: 3em !important;
+    z-index: 20;
+    position: relative;
+    color: rgba(192,192,192,1);
+}
+
+@keyframes scale {
+    from{
+        transform: scale(0.7);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
+@keyframes smanji {
+    0%{
+        transform: scale(0.6);
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        transform: scale(1.2);
+        opacity: 1;
+    }
+}
+
+.wrapper{
+    width: 300px;
+    margin: 0 auto;
+}
+.wrapper a{
+    font-size: 2em;
+    font-family: 'Lobster', cursive;
+}
+.backgroundImg{
+    background-image: url('./pozadina.png');
+    background-size: cover;
+    height: 630px;
+}
+.loaderText{
+    font-family: mojFont;
+    font-size: 5em;
+    padding: 100px;
+    text-align: center;
+    color: #fff;
+    animation: textAnimation 5s infinite linear;
+    animation-fill-mode: both;
+}
+
+@keyframes textAnimation {
+    0%{
+        color: #fff;
+    }
+    25%{
+        color: blueviolet;
+    }
+    50%{
+        color: aqua;
+    }
+    75%{
+        color: violet;
+    }
+    100%{
+        color: #fff;
+    }
+}
